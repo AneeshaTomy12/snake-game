@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div class="body">
+        <audio id="audio">
+            <source src="assets/audio/music.mp3" type="audio/mpeg">
+        </audio>
+        <span class="bg-image">
+            <img src="assets/images/snake.png" width="150px" height="150px">
+        </span>
+        <span class="title">SNAKE GAME</span>
+        <div id="scoreCard">Score : 0</div>
+        <span id="gameCard"></span>
+        <span id="soundBtn"><button id="playpause" onclick="playSound()">MUSIC &#9658;</button></span>
+        <div id="field">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

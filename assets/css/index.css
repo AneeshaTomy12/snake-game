@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../images/bg.jpeg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image {
+    display: none;
+}
+#scoreCard{
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 8%;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+    /* playing field  */
+#field {
+    background: linear-gradient(rgb(172, 228, 172), rgb(216, 216, 149));
+    width: 80vmin;
+    height: 92vmin;
+    border: 2px solid rgb(163, 199, 90);
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+
+.food {
+    background:linear-gradient(purple,red,purple);
+    border-radius: 20px;
+}
+.bonusFood {
+    background:linear-gradient(purple,red,purple);
+    border-radius: 20px;
+}
+
+.snakeHead {
+    /* background-color: #262923; */
+    background-image: url("../images/heads.svg");
+    background-size: cover;
+    /* border-radius: 8px; */
+    /* border: 1px solid green; */
+}
+
+.title{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px green;
+}
+
+.snake {
+    background:linear-gradient(green,yellow);
+    border-radius: 8px;
+    border: 2px solid green;
+    }
+#gameCard{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(201, 21, 21);
+    font-size: 40px;
+    display: none;
+    text-shadow: 3px 2px green;
+    z-index: 1;
+}
+#playpause{
+    padding: 10px 25px;
+    font-size: 22px;
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right bottom,#273c75,#079992);
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .body {
+        background: linear-gradient(rgb(140, 165, 51), rgb(133, 158, 44), rgb(209, 238, 44));
+        display: block;
+        text-align: center;
+    }
+
+    .bg-image {
+        padding-top: 20px;
+        display: block;
+        z-index: 1;
+    }
+    .title{
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        font-family: 'Raleway', sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: rgb(124, 11, 11);
+    }
+    #soundBtn{
+        padding: 10px 25px;
+        font-size: 22px;
+        line-height: 40px;
+        min-width: 150px;
+        text-align: center;
+        cursor: pointer;
+        background: linear-gradient(to right bottom,#273c75,#079992);
+        color: #fff;
+        border-radius: 5px;
+        border: 0px;
+        height: 60px;
+
+    }
+    #soundBtn{
+        display: none;
+    }
+
+    #field {
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    #scoreCard{
+        top: 19%;
+        left: 11%;
+        font-size: 25px;
+    }
+    #gameCard{
+        font-size: 30px;
+    }
+}
